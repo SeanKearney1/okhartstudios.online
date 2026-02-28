@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+  <body onload="init()">
+
+    <div class="inspect_image" id="inspect-image" onclick="ClickOffImage()" style="display:none">
+      <img src="images/all_icons.png" class="inspected_image" id="inspected-image" alt = "The Image Inspected">
+    </div>
+
+    <div class="background_holder">
+      <div class="background" style="background-image: linear-gradient(to bottom, rgb(0,0,0), rgb(0,0,50), rgb(0,0,100), rgb(0,0,50), rgb(0,0,0));"></div>
+        <div class="main_banner">
+            <img src="images/cover.png" class="center" alt = "Main Banner" style="width:80%;margin-bottom:80px;filter:brightness(75%)">
+            <div class="cover_banner_text">
+              <h2 style="color: rgba(255, 255, 255,1);font-style:italic;text-shadow: 5px 5px black">Sean Kearney</h2>
+              <h3 style="color: rgba(255, 255, 255,1)">
+                Modder • Programmer • Game Developer
+              </h3>
+            </div>
+        </div>
+
+        <div style="text-align:center;color:white;font-size: 400%;"> About Me </div>
+        <div class="about_me">
+          I am a college student at Monroe County Community College currently getting my
+          Associates degree in Computer Science. In my free time I like to make mods and
+          custom content for games, this includes custom scripts, models, textures, animations,
+          gamemodes, and anything else the mod might need. Aside from mods I've made several small games,
+          with my biggest being my 2D endless runner "Infinity Castle", and I have some experience
+          in both 2D and 3D animation.  I've been programming since 2021 and have experience programming
+          in many different languages like Java, C++, Python, Lua, HTML, etc. I have a very well rounded
+          knowledge in just about all aspects of game development from frontend to backend and a
+          deep understanding of the game development process.
+        </div>
+
+    <!--<img src="images/infinity_castle1.png" alt = "About me Image" class="center" style="width:1280px;height:720px;">
+    <br>
+    <img src="images/infinity_castle2.png" alt = "About me Image" class="center" style="width:1280px;height:720px;">-->
+
+    <div class="cover">
+      <div class="row">
+        <div class="cover_column">
+          <img src="images/cover_games.png" class="center" id="1001" onclick="ClickImage(1001)" alt = "Games Cover" style="cursor:zoom-in;width:80%">
+          <h1>Games</h1>
+          <p>I've made several games, some using game engines like Unity while other smaller projects made without engines in java or python.</p>
+        </div>
+        <div class="cover_column">
+          <img src="images/cover_mods.png" class="center" id="-1002" onclick="ClickImage(-1002)" alt = "Mods Cover" style="cursor:zoom-in;width:80%;image-rendering: pixelated;">
+          <h1>Mods</h1>
+          <p>In my free time I like to make mods and custom content for games like Team Fortress 2, Left For Dead 2, Garry's Mod, and Minecraft.</p>
+        </div>
+        <div class="cover_column">
+          <img src="images/animation_cover.png" class="center" id="1003" onclick="ClickImage(1003)" alt = "Animation Cover" style="cursor:zoom-in;width:80%">
+          <h1>Animation</h1>
+          <p>As a part of my projects I've done animation from basic character movement to full several-minute cutscenes.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="videoplayer">
+      <video width="100%" height="100%" controls>
+        <source src="videos/demo.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+      </video>
+    </div>-->
+
+  </div>
+
+
+    <div class="background_holder">
+      <div class="background" style="background-image: linear-gradient(to bottom, rgb(0,0,50), rgb(0,0,25), rgb(0, 0, 0), rgb(0,0,25), rgb(0,0,50));"></div>
+
+      <div class="banner">
+          <img src="images/links_banner.png" class="center" alt = "LCAW Banner" style="width:100%;">
+          <div class="offshore_banner_text">
+            <h2 style="color: rgba(255, 255, 255, 0.6)">Links</h2>
+          </div>
+       </div>
+             <div class="links_description">
+              <div class="row">
+                <div class="link_column">
+                  <u style="font-size:160%;">Projects</u>
+                  <div class="link_text" style="margin-top:32px">
+                    <a href="https://spk21.itch.io/infinity-castle">Infinity Castle</a>
+                  </div>
+                  <div class="link_text">
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3465256009">The Offshore Project</a>
+                  </div>
+                  <div class="link_text">
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3655785481">Labyrinth V2</a>
+                  </div>
+                  <div class="link_text">
+                    <a href="https://github.com/SeanKearney1/Vampire-Hunter">Vampire Hunter</a>
+                  </div>
+                </div>
+                <div class="link_column">
+                  <u style="font-size:160%;">Accounts</u>
+                  <div class="link_text" style="margin-top:32px">
+                    <a href="https://steamcommunity.com/profiles/76561198444665306/myworkshopfiles/?appid=440&sort=score&browsefilter=myfiles&view=imagewall">Steam Workshop</a>
+                  </div>
+                  <div class="link_text">
+                    <a href="https://github.com/SeanKearney1">GitHub</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="contact_column">
+                  <u style="font-size:160%;">Contact Me</u>
+                  <div class="link_text" style="margin-top:32px;font-family:sans-serif;white-space:pre;">(734)-341-1913   |   skearney@wowway.com</div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+
+
+  <div class="background_holder">
+    <div class="background" style="background-image: linear-gradient(to bottom, rgb(47,20,20), rgb(142,124,98), rgb(235,200,152), rgb(142,124,98), rgb(47,20,20));"></div>
+
+
+  <div class="banner">
+      <img src="images/infinity_castle_banner.jpg" class="center" alt = "Infinity Castle Banner" style="width:100%;filter:brightness(75%);margin-bottom:80px">
+      <div class="offshore_banner_text">
+        <h2 style="color: rgba(255, 255, 255, 0.8)">Infinity Castle</h2>
+      </div>
+   </div>
+
+
+
+   <div class="infinity_castle_description">
+     This is a 2 player 2D endless runner game based off the show Demon Slayer.
+     The game is about the player falling down through the "Infinity Castle",
+     fighting demons, dodging building, and collecting coins.
+     It has a variety of level hazards, collectables, and player abilities
+     to keep the game interesting, and ontop of having several gamemodes
+     has a page to create your own gamemode, giving customization to just
+     about every variable in the game.
+   </div>
+
+
+
+      <div class="row">
+        <div class="infinity_castle_column" style="margin-bottom:40px">
+          <img src="images/infinity_castle1.png" class="center" id="2001" onclick="ClickImage(2001)" alt = "Infinity Castle 1" style="cursor:zoom-in;width:90%">
+          <div class="infinity_castle_image_text1">Image of typical gameplay.</div>
+        </div>
+        <div class="infinity_castle_column">
+          <img src="images/infinity_castle2.png" class="center" id="2002" onclick="ClickImage(2002)" alt = "Infinity Castle 2" style="cursor:zoom-in;width:90%">
+          <div class="infinity_castle_image_text2">Pause Menu.</div>
+        </div>
+      </div>
+
+      <div class="row" style="padding-bottom:240px">
+        <div class="labyrinth_column1">
+          <img src="images/infinity_castle_3.png" class="center" id="2003" onclick="ClickImage(2003)" alt = "Infinity Castle 3" style="cursor:zoom-in;width:90%">
+          <div class="infinity_castle_image_text3">Game mode selection screen.</div>
+        </div>
+        <div class="labyrinth_column1">
+          <img src="images/infinity_castle_4.png" class="center" id="2004" onclick="ClickImage(2004)" alt = "Infinity Castle 4" style="cursor:zoom-in;width:90%">
+          <div class="infinity_castle_image_text4">Build your own game mode screen.</div>
+        </div>
+        <div class="labyrinth_column1">
+          <img src="images/infinity_castle_5.png" class="center" id="2005" onclick="ClickImage(2005)" alt = "Infinity Castle 5" style="cursor:zoom-in;width:95%">
+          <div class="infinity_castle_image_text5">Gameplay scene in Unity.</div>
+        </div>
+      </div>
+   </div>
+
+
+   <div class="background_holder">
+     <div class="background" style="background-image: linear-gradient(to bottom, rgb(50,50,55), rgb(75,75,76), rgb(65,65,100), rgb(49,49,77), rgb(40,40,73));"></div>
+
+    <div class="banner">
+        <img src="images/offshore_banner.jpg" class="center" alt = "Offshore Banner" style="width:100%;filter:brightness(75%);margin-bottom:80px">
+        <div class="offshore_banner_text">
+          <h2 style="color: rgba(255, 255, 255, 0.6)">The Offshore Project</h2>
+        </div>
+     </div>
+
+     <div class="offshore_description" style="margin-top:4%;">
+      This was my submission for the "Offshore Project", a
+      nautical themed community project for Team Fortress 2.
+      The project's goal was to get TF2 modders to create themed
+      content for the game in hopes of working with Valve to make
+      another major update, something Valve has not done since 2017.
+    </div>
+      <div class="offshore_description" style="margin-top:1%;margin-bottom:6%;">
+      My submission was a level and mission for TF2's PvE gamemode,
+      Mann vs. Machine. The level itself is an old repurposed aircraft carrier
+      crashed into an oil rig. The level has several unique enviromental hazards
+      like moving shipping containers which redirect the robots and change
+      where players can take cover, "Storm Waves" which sweep over the main
+      deck of the ship hindering visibility and movement, and explosive oil drums
+      dropped from a helicopter, providing area denial against the players.
+      Custom robots where also added, based around the themes of the enviromental
+      hazards like robots that could create fiery oil spills or walk around unaffected
+      by storm waves. The level was never fully finished as the Offshore Project
+      fell through. The level is currently unpolished but fully working.
+     </div>
+
+    <div class="row" style="padding-bottom:240px">
+      <div class="offshore_column1">
+        <img src="images/offshore_thumbnail.jpg" class="center" id="3001" onclick="ClickImage(3001)" alt = "Offshore Picture 4" style="cursor:zoom-in;width:90%;padding-bottom: 20px">
+        <img src="images/all_icons.png" class="center" id="3002" onclick="ClickImage(3002)" alt = "Offshore Picture 5" style="cursor:zoom-in;width:90%">
+        <div class="offshore_image_text" style="top:1%;left:7%;">Workshop thumbnail with the Offshore banner.</div>
+        <div class="offshore_image_text" style="top:52%;left:7%;">Custom HUD icons.</div>
+      </div>
+      <div class="offshore_column2">
+        <img src="images/crane.jpg" class="center" id="3003" onclick="ClickImage(3003)" alt = "Offshore Picture 1" style="cursor:zoom-in;width:90%;padding-bottom: 20px">
+        <img src="images/hallway.jpg" class="center" id="3004" onclick="ClickImage(3004)" alt = "Offshore Picture 2" style="cursor:zoom-in;width:90%;padding-bottom: 20px">
+        <img src="images/stormwave_8192_128.jpg" class="center" id="3005" onclick="ClickImage(3005)" alt = "Offshore Picture 3" style="cursor:zoom-in;width:90%">
+        <div class="offshore_image_text" style="top:1%;left:7%;">Crane that moves the shipping containers.</div>
+        <div class="offshore_image_text" style="top:35%;left:7%;">Flank hallway for the robots.</div>
+        <div class="offshore_image_text" style="top:68%;left:7%;">Seperate level for testing the wave particle effects colliding with solid objects.</div>
+      </div>
+      <div class="offshore_column3">
+        <img src="images/all_diagrams.png" class="center" id="3006" onclick="ClickImage(3006)" alt = "Offshore Picture 6" style="cursor:zoom-in;width:90%;padding-bottom: 20px">
+        <img src="images/offshore1.jpg" class="center" id="3007" onclick="ClickImage(3007)" alt = "Offshore Picture 7" style="cursor:zoom-in;width:90%">
+        <div class="offshore_image_text" style="top:53%;left:50%;">Diagrams of the custom level elements.</div>
+        <div class="offshore_image_text" style="top:65%;left:7%;">One of the three bomb paths the robots can follow.</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="background_holder">
+    <div class="background" style="background-attachment: scroll;background-image: linear-gradient(to bottom, rgb(123,175,250), rgb(73,137,255), rgb(128,128,128), rgb(64,64,64), rgb(0,0,0));"></div>
+
+    <div class="banner">
+        <img src="images/labyrinth_banner.jpg" class="center" alt = "Labyrinth V2 Banner" style="width:100%;filter:brightness(75%);margin-bottom:80px">
+          <div class="offshore_banner_text">
+            <h2 style="color: rgba(255, 255, 255, 0.6)">Labyrinth V2</h2>
+          </div>
+       </div>
+
+       <div class="labyrinth_description" style="margin-top: 4%;">
+
+         This is a Minecraft-themed level designed for a Team Fortress 2
+         community server. This level has several unique areas, each with
+         lots of secrets, puzzles, and other sorts of interactables.
+         There are four main areas: the Garden, the Underground, the Old World,
+         and the main floor.
+       </div>
+       <div class="labyrinth_description" style="margin-top: 1%;margin-bottom: 6%;">
+         The original labyrinth made back in 2021 was smaller,
+         unoptimized, and relatively unpolished so I came back in December of 2025
+         and made an improved version. The second version has three additional floors,
+         more detail, custom models, scripts, and particle effects. It's also
+         much more optimized, so much so there was enough room to fit the old
+         labyrinth in as the "Old World", a decrepit and dark dungeon floating in
+         the void underneath the rest of the level.
+       </div>
+
+       <div class="row">
+         <div class="labyrinth_column1">
+           <img src="images/labyrinth_1.jpg" class="center" id="4001" onclick="ClickImage(4001)" alt = "Labyrinth Picture 1" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+           <img src="images/labyrinth_2.jpg" class="center" id="4002" onclick="ClickImage(4002)" alt = "Labyrinth Picture 2" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+           <img src="images/labyrinth_10.jpg" class="center" id="4003" onclick="ClickImage(4003)" alt = "Labyrinth Picture 3" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+
+           <div class="labyrinth_image_text" style="top:1%;left:7%;">Monster display room.</div>
+           <div class="labyrinth_image_text" style="top:34.5%;left:7%;">Recreation of the famous map "Skyblock". Accessed by the teleporter.</div>
+           <div class="labyrinth_image_text" style="top:68%;left:7%;">Early images of the Garden cliff.</div>
+
+         </div>
+         <div class="labyrinth_column2">
+            <img src="images/labyrinth_3.jpg" class="center" id="4004" onclick="ClickImage(4004)" alt = "Labyrinth Picture 4" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+            <img src="images/labyrinth_4.jpg" class="center" id="4005" onclick="ClickImage(4005)" alt = "Labyrinth Picture 5" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+            <img src="images/labyrinth_9.jpg" class="center" id="4006" onclick="ClickImage(4006)" alt = "Labyrinth Picture 6" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+
+            <div class="labyrinth_image_text" style="top:1%;left:7%;">Small cave with a puzzle that unlocks the Garden.</div>
+            <div class="labyrinth_image_text" style="top:34.5%;left:7%;">Large ravine found in the Underground.</div>
+            <div class="labyrinth_image_text" style="top:68%;left:7%;">Player standing in the Old World.</div>
+         </div>
+         <div class="labyrinth_column3">
+           <img src="images/labyrinth_5.jpg" class="center" id="4007" onclick="ClickImage(4007)" alt = "Labyrinth Picture 7" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+           <img src="images/labyrinth_6.jpg" class="center" id="4008" onclick="ClickImage(4008)" alt = "Labyrinth Picture 8" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+           <img src="images/labyrinth_12.jpg" class="center" id="4009" onclick="ClickImage(4009)" alt = "Labyrinth Picture 9" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+
+           <div class="labyrinth_image_text" style="top:1%;left:7%;">The Underground's respawn room.</div>
+           <div class="labyrinth_image_text" style="top:34.5%;left:7%;">Broken hallway in the Old World.</div>
+           <div class="labyrinth_image_text" style="top:68%;left:7%;">Large house located in the Garden.</div>
+         </div>
+       </div>
+
+        <div class="row" style="padding-bottom:240px">
+          <div class="labyrinth_column1">
+            <img src="images/labyrinth_8.png" class="center" id="4010" onclick="ClickImage(4010)" alt = "Labyrinth Picture 11" style="cursor:zoom-in;width:90%">
+            <div class="labyrinth_image_text" style="top:3%;left:7%;">Animating the Iron Golem in Blender.</div>
+          </div>
+          <div class="labyrinth_column2">
+            <img src="images/labyrinth_7.png" class="center" id="4011" onclick="ClickImage(4011)" alt = "Labyrinth Picture 10" style="cursor:zoom-in;width:90%">
+            <div class="labyrinth_image_text" style="top:3%;left:7%;">Modeling the Garden cliff in Blender.</div>
+          </div>
+          <div class="labyrinth_column3">
+            <img src="images/labyrinth_11.png" class="center" id="4012" onclick="ClickImage(4012)" alt = "Labyrinth Picture 12" style="cursor:zoom-in;width:90%">
+            <div class="labyrinth_image_text" style="top:3%;left:7%;">Script for the "Lootful Larry" puzzle.</div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <div class="background_holder">
+      <div class="background" style="background-attachment: scroll;background-image: linear-gradient(to top right, rgb(254,209,88), rgb(255,163,70), rgb(160,90,140), rgb(61,99,169), rgb(54,54,56), rgb(26,26,26), rgb(0,0,0));"></div>
+
+         <div class="banner">
+             <img src="images/vampire_hunter_banner.png" class="center" alt = "Vampire Banner" style="width:100%;margin-bottom:80px">
+             <div class="offshore_banner_text">
+               <h2 style="background-image: linear-gradient(to left,rgb(255, 255, 255),rgb(128, 128, 128),rgb(0, 0, 0),rgb(0, 0, 0));color: transparent;background-clip: text;">Vampire Hunter</h2>
+             </div>
+          </div>
+
+          <div class="vampire_description" style="margin-top: 1%;margin-bottom: 3%;">
+            This is a datapack built for Minecraft 1.20.2 which adds my
+            "Vampire Hunter" gamemode, a combat focused, team-based fighting game
+            of humans and vampires. There are custom spells and weapons for the hunters
+            and four unique vampires, being the:
+             Necromancer, Barbarian, Plague Doctor, and Spirit Vampire. Each
+             vampire has a variety of custom abilites ranging from spreading the plague
+             and summoning the dead to smashing through walls and possessing people.
+          </div>
+          <div class="vampire_description" style="margin-top: 1%;">
+            <u style="font-family: sarif;">Quote from a journal in the game:</u>
+          </div>
+          <div class="vampire_quote" style="margin-top: 1%;margin-bottom: 6%;">
+            "As the sun begins to set upon the plains, the last remaining vampire hunters make way
+            towards their home. After a long day of gathering food, resources, and
+            ingredients for their spells they prepare for an even longer night ahead.
+            Far to the west, the interior of a dark castle begins to awake
+            as the stone walls shed the last light of the setting sun. In the
+            darkness large figures rocket off high into the clouds and begin to comb
+            the land for what little sign of life remains. As the last
+            window was boarded up, streaks of stars began to flicker in the
+            night sky. The vampires had too many nights uncontested and
+            were far more powerful than before. It was clear tonight
+            wouldn't be like before, tonight they were getting in."
+          </div>
+
+
+          <div class="row" style="padding-bottom:240px">
+            <div class="vampire_hunter_column1">
+              <img src="images/vampire_hunter_1.png" class="center" id="5001" onclick="ClickImage(5001)" alt = "Labyrinth Picture 2" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+              <img src="images/vampire_hunter_6.png" class="center" id="5002" onclick="ClickImage(5002)" alt = "Labyrinth Picture 2" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+              <img src="images/vampire_hunter_4.png" class="center" id="5003" onclick="ClickImage(5003)" alt = "Labyrinth Picture 5" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+              <img src="images/vampire_hunter_5.png" class="center" id="5004" onclick="ClickImage(5004)" alt = "Labyrinth Picture 6" style="cursor:zoom-in;width:90%">
+
+              <div class="vampire_image_text" style="top:1%;left:7%;">Human team's home.</div>
+              <div class="vampire_image_text" style="top:26.5%;left:7%;">Inside a mausoleum. A randomly generating structure useful for both teams.</div>
+              <div class="vampire_image_text" style="top:52%;left:7%;">The vampire castle.</div>
+              <div class="vampire_image_text" style="top:77.5%;left:7%;">Mausoleum near a village.</div>
+            </div>
+            <div class="vampire_hunter_column2">
+               <img src="images/vampire_hunter_3.png" class="center" id="5005" onclick="ClickImage(5005)" alt = "Labyrinth Picture 4" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+               <img src="images/vampire_hunter_2.png" class="center" id="5006" onclick="ClickImage(5006)" alt = "Labyrinth Picture 3" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+               <img src="images/vampire_hunter_7.png" class="center" id="5007" onclick="ClickImage(5007)" alt = "Labyrinth Picture 2" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+               <img src="images/vampire_hunter_code.png" class="center" id="5008" onclick="ClickImage(5008)" alt = "Labyrinth Picture 1" style="cursor:zoom-in;width:90%">
+
+               <div class="vampire_image_text" style="top:1%;left:7%;">The human team's main anti-vampire tool. The scarecrows.</div>
+               <div class="vampire_image_text" style="top:26.5%;left:7%;">Mausoleum from the outside.</div>
+               <div class="vampire_image_text" style="top:52%;left:7%;">Mausoleum from the outside at night.</div>
+               <div class="vampire_image_text" style="top:77.5%;left:7%;">Code snippet showing the main logic for the vampires.</div>
+            </div>
+          </div>
+       </div>
+
+
+   <div class="background_holder">
+     <div class="background" style="background-image: linear-gradient(to bottom, rgb(100,0,100), rgb(30,0,30), rgb(0,0,0));"></div>
+
+      <div class="banner">
+          <img src="images/lcaw_banner.png" class="center" alt = "LCAW Banner" style="width:100%;margin-bottom:80px">
+          <div class="offshore_banner_text">
+            <h2 style="color: rgba(255, 255, 255, 0.6)">Let's Craft a Weapon: 2026</h2>
+          </div>
+       </div>
+
+       <div class="lcaw_description" style="margin-top: 1%;margin-bottom: 6%;">
+         This is a Minecraft-themed level for Left 4 Dead 2. This level
+         is apart of L4D2's campaign gamemode. It is a one chapter campaign
+         where the four survivors must travel to several different dimensions
+         and deactivate generators to beat the final boss and escape. The main
+         gameplay loop involves players traveling through portals to Minecraft's
+         End, Nether, and Aether dimensions where they have to fight through
+         hordes of L4D2's "Special Infected" before reaching and destroying
+         that dimension's generator. The campaign has many custom models,
+         scripts, animations, and particle effects to "Minecraft-ify" the game.
+         The campaign is still in development, but as of now the level is
+         finished, all replacement models for the survivors, infected, weapons,
+         etc. are done, and the first of three cutscenes is finishing animation.
+         This chapter is a prologue to a larger campaign I've been working on.
+       </div>
+
+
+       <div class="row" style="padding-bottom:240px">
+         <div class="lcaw_column1">
+
+           <img src="images/blender1.png" class="center" id="6001" onclick="ClickImage(6001)" alt = "LCAW Picture 1" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+           <img src="images/lcaw_5.png" class="center" id="6002" onclick="ClickImage(6002)" alt = "LCAW Picture 2" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+           <img src="images/lcaw_1.png" class="center" id="6003" onclick="ClickImage(6003)" alt = "LCAW Picture 3" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+
+           <div class="lcaw_image_text" style="top:1%;left:7%;">Replacement model for the Tank.</div>
+           <div class="lcaw_image_text" style="top:42%;left:7%;">Opening cutscene in Blender.</div>
+           <div class="lcaw_image_text" style="top:70.5%;left:7%;">Later part of opening cutsene.</div>
+
+         </div>
+
+         <div class="lcaw_column2">
+
+           <video class=center width="100%" height="100%" controls style="width:90%;">
+             <source src="videos/lcaw_demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+           </video>
+           <div class=lcaw_video_descriptor>
+             Highlights of gameplay footage showcasing destroying out both
+             generators. Shows custom level, replacement models for weapons,
+             infected, and survivors with other custom models like
+             generators, portals, and miscellaneous decorations.
+           </div>
+
+             <video class=center width="100%" height="100%" controls style="width:90%;">
+               <source src="videos/killscene.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+             </video>
+             <div class=lcaw_video_descriptor>
+               Scrapped "Killscene" from the main campaign. In certain chapters
+               of the main campaign there are forks in the road or certain
+               areas you should stay away from. Going in these areas triggers
+               "killscenes"; cutscenes where the survivors encounter the main
+               villain and he fights and kills them, typically doing some world
+               building in the process, or just showing off the villain's
+               powers. With every progressing killscene the fight is more in the
+               survivors favor, until they finally defeat the villain in the
+               final fight triggering one last ending cutscene where they win.
+             </div>
+         </div>
+
+
+         <div class="lcaw_column3">
+           <img src="images/LCAW24 Teaser.png" class="center" id="6004" onclick="ClickImage(6004)" alt = "LCAW Picture 4" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+           <img src="images/lcaw_2.png" class="center" id="6005" onclick="ClickImage(6005)" alt = "LCAW Picture 5" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+           <img src="images/lcaw_4.png" class="center" id="6006" onclick="ClickImage(6006)" alt = "LCAW Picture 6" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+           <img src="images/lcaw_3.png" class="center" id="6007" onclick="ClickImage(6007)" alt = "LCAW Picture 7" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+
+           <div class="lcaw_image_text" style="top:17%;left:7%;">Cover image.</div>
+           <div class="lcaw_image_text" style="top:25.5%;left:7%;">Looking at the portal in the Aether dimension.</div>
+           <div class="lcaw_image_text" style="top:50%;left:7%;">Valkyries and Swets in the End dimension.</div>
+           <div class="lcaw_image_text" style="top:74.5%;left:7%;">Fighting Zombie Pigmen in the Nether dimension.</div>
+         </div>
+       </div>
+
+  </div>
+
+  <div class="background_holder">
+    <div class="background" style="background-image: linear-gradient(to bottom, rgb(150,0,0), rgb(75,0,0), rgb(50,0,0), rgb(0,0,0));"></div>
+
+        <div class="banner">
+            <img src="images/campaign_banner.jpg" class="center" alt = "Campaign Banner" style="width:100%;margin-bottom:80px">
+            <div class="offshore_banner_text">
+              <h2 style="color: rgba(0, 0, 0, 0.75)">Main Left 4 Dead 2 Campaign</h2>
+            </div>
+         </div>
+
+
+         <div class="lcaw_description" style="margin-top: 1%;margin-bottom: 6%;">
+          This is an in-development Minecraft-themed series of levels
+          for Left 4 Dead 2. Just like the project above it has scripts,
+          models, animations, textures, etc. but on a larger scale. It's
+          planned to have around 7* chapters in total, being released
+          in groups of two with the final chapter being a standalone
+          release. Certain chapters either from size or pacing are broken
+          up into multiple chapters.
+         </div>
+
+         <div class="row">
+           <div class="campaign_column1">
+             <img src="images/campaign_1.png" class="center" id="7001" onclick="ClickImage(7001)" alt = "Campaign Picture 1" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+             <div class="campaign_image_text" style="top:2%;left:7%;">Mine section in Chapter 1.</div>
+           </div>
+           <div class="campaign_column1">
+              <img src="images/campaign_3.jpg" class="center" id="7002" onclick="ClickImage(7002)" alt = "Campaign Picture 2" style="cursor:zoom-in;width:90%;padding-bottom: 60px">
+              <div class="campaign_image_text" style="top:2%;left:7%;">Finale section in Chapter 1.</div>
+           </div>
+         </div>
+
+         <div class="row" style="padding-bottom:240px">
+           <div class="campaign_column2">
+             <img src="images/campaign_2.jpg" class="center" id="7003" onclick="ClickImage(7003)" alt = "Campaign Picture 3" style="cursor:zoom-in;width:70%;padding-bottom: 60px;">
+
+             <div class="campaign_image_text" style="top:2%;left:16%;">Area in Chapter 2.</div>
+           </div>
+
+         </div>
+
+  </div>
+<!--
+        <p>
+          An in-development level for Left 4 Dead 2 with lots of
+          handmade scripts, models, textures, particles, and
+          animations that create a fun, unique, and challenging
+          experience for players.  This project uses a plethora
+          of techniques to create many new features and mechanics
+          not currently in the base game.
+        </p>
+
+
+    <img src="images/blender1.png" alt = "About me Image" style="width:100%;height:600px;">
+
+    <img src="images/l4d21.jpg" alt = "About me Image" style="width:100%;height:600px;">
+
+    <p>Hey!</p>
+
+    <img src="images/mineimator.png" alt = "About me Image" style="width:100%;height:600px;">
+
+    <p>Hey!</p>
+
+    <img src="images/studiomdl1.png" alt = "About me Image" style="width:100%;height:600px;">
+
+    <p>Hey!</p>
+
+    <img src="images/studiomdl2.png" alt = "About me Image" style="width:100%;height:600px;">
+
+    <p>Hey!</p>
+
+    <img src="images/vscode1.png" alt = "About me Image" style="width:100%;height:600px;">
+
+    <p>Hey!!!!!!!!!!!!!!!!!!!!!!!!!</p>-->
+
+  </body>
+</html>
